@@ -1,4 +1,4 @@
-import { Schema,model } from "mongoose";
+import mongoose, { Schema,model } from "mongoose";
 
 const newLaunchSchema  = new Schema({
        title:{
@@ -32,6 +32,6 @@ const newLaunchSchema  = new Schema({
        }]
 },{timestamps:true})
 
-const NewLaunch = model("NewLaunch",newLaunchSchema);
+const NewLaunch = mongoose.models.NewLaunch || model("NewLaunch",newLaunchSchema);
 
 export default NewLaunch;
