@@ -5,7 +5,6 @@ import Image from "next/image"
 import { useState } from "react"
 import Login from "./Login"
 
-
 const Navbar = () => {
 
   const [openLogin,setopenLogin] = useState(false)
