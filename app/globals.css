@@ -1,2 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: ex2o;
+    src: url(../fonts/exo2.ttf);
+}
+
+body{
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    font-family: ex2o;
+}
