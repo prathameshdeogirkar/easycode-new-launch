@@ -8,7 +8,7 @@ export const POST = async (request) => {
 
     const { title, youtube_url, heading, sub_heading, prise, launch_date, key_heading, key_points } = await request.json();
 
-    if (!title || !youtube_url || !heading || !sub_heading || !prise || !launch_date || !key_heading || !key_points) {
+    if (!title || !youtube_url || !heading || !sub_heading ) {
       return NextResponse.json({
         success: false,
         message: "All fields are required",
@@ -39,4 +39,10 @@ export const POST = async (request) => {
       message: error.message || "Something went wrong",
     }, { status: 500 });
   }
+};
+export const GET = async (request, { params }) => {
+  const { id } = params;
+  console.log(id);
+
+  return new Response(`ID is ${id}`);
 };
