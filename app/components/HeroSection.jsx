@@ -21,7 +21,6 @@ const HeroSection = () => {
                         allowFullScreen
                     ></iframe>
 
-
                 </div>
             </div>
         </div>
