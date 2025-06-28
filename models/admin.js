@@ -1,4 +1,4 @@
-import {Schema,model} from "mongoose";
+import mongoose, {Schema,model} from "mongoose";
 
 const adminSchema = new Schema({
      mobile_number:{
@@ -11,5 +11,5 @@ const adminSchema = new Schema({
      }
 })
 
-const Admin = model("Admin",adminSchema);
+const Admin = mongoose.model.Admin || model("Admin",adminSchema);
 export default Admin
