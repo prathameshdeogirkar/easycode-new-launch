@@ -19,7 +19,7 @@ const Navbar = () => {
         <i className="ri-user-fill m-2"></i>
        </span>
        {
-        openLogin ? <Login/> : null
+        openLogin ? <Login setopenLogin={setopenLogin}/> : null
        }
     </div>
   )

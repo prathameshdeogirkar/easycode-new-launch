@@ -10,7 +10,5 @@ function page() {
       <HeroSection/>
       
     </div>
-  )
-}
-
+  )}
 export default page
