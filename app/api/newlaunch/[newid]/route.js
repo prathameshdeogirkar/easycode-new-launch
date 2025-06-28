@@ -3,7 +3,7 @@ import NewLaunch from "@/models/newlaunch"
 
 export const GET = async( request,{params}) =>{
     const {newid} = await params
-    console.log(newid)
+    
     try {
          if(!newid){
              return NextResponse.json({
